@@ -154,8 +154,14 @@ table.table {
   @include named-section($msg-json-section-description);
 }
 
+
+
 .json-schema-properties {
   @include named-section($msg-json-section-properties);
+
+  .json-schema-properties::before {
+    display: none;
+  }
 
   dl {
     margin: 0;
